@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somirin's Storybook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bg-music" loop autoplay>
+    <source src="music/background.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+    <div id="notebook">
+        <!-- Cover Page -->
+        <div class="page cover active">
+            <h1>Somirin’s Notebook</h1>
+            <p>By Someone Who Loves Her</p>
+            <button onclick="nextPage()">Open</button>
+        </div>
+
+        <!-- Page 1 -->
+        <div class="page" id="page1">
+            <h2>Dear Somirin,</h2>
+            <p>Once upon a time, I met the most special person, standing alone all by herself. Laughing at my jokes, or maybe worst at me. But I'm thankful she laughed, that laugh completely changed my life.</p>
+            <img src="images/page1.jpg" alt="A special memory" class="page-image">
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="page" id="page2">
+            <h2>Things I Love About You</h2>
+            <ul>
+                <li>Your smile</li>
+                <li>Your love for animals</li>
+                <li>The way you say "it's not fair"</li>
+                <li>Your scary laughs</li>
+                <li>When you say everything's fine, but we both know it's not</li>
+                <li>Your curry rice obsession</li>
+                <li>Our late-night songs, singing together</li>
+                <li>How much stronger you become for someone else</li>
+            </ul>
+            <img src="images/page2.jpg" alt="Things I love" class="page-image">
+            <button onclick="prevPage()">Back</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <!-- Page 3 -->
+        <div class="page" id="page3">
+            <h2>Our Adventures</h2>
+            <p>Remember that time you came into the world thinking I was on a date? Or the time you got stuck in the ice. Or how you told me you weren't ready. Or the times you thought you didn't deserve love or someone. Or the time you cried recalling all the past experiences.</p>
+            <img src="images/page3.jpg" alt="Our Adventures" class="page-image">
+            <button onclick="prevPage()">Back</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <!-- Page 4 -->
+        <div class="page" id="page4">
+            <h2>A Promise for the Future</h2>
+            <p>No matter what, I'll always be here for you. On days when you don't feel loved, I promise to make you feel otherwise. On days when you think you're not worth it, I'll make you feel you're worth the whole world. On days when you're not feeling wanted, baby you're the one I want.</p>
+            <p>Our story has just started, our journey together is yet to be traveled, our future together is yet to unfold.</p>
+            <p><strong>Would you be here with me together as we go on into the future?</strong></p>
+            <img src="images/page4.jpg" alt="Future Together" class="page-image">
+            <button onclick="prevPage()">Back</button>
+            <button onclick="finishStory()">Finish</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
